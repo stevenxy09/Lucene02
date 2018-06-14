@@ -58,7 +58,7 @@ public class IndexingTest2 {
 	 */
 	@Test
 	public void index()throws Exception{
-		dir=FSDirectory.open(Paths.get("D://lucene3"));
+		dir=FSDirectory.open(Paths.get("D:\\lucene3"));
 		IndexWriter writer=getWriter();
 		for(int i=0;i<ids.length;i++) {
 			Document document=new Document();
@@ -83,7 +83,7 @@ public class IndexingTest2 {
 	 */
 	@Test
 	public void search()throws Exception{
-		dir=FSDirectory.open(Paths.get("D://lucene3"));
+		dir=FSDirectory.open(Paths.get("D:\\lucene3"));
 		IndexReader reader=DirectoryReader.open(dir);
 		IndexSearcher is=new IndexSearcher(reader);
 		String searchField="title";

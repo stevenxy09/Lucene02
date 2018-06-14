@@ -37,7 +37,7 @@ public class IndexingTest {
 	
 	@Before
 	public void setUp() throws Exception {
-		dir=FSDirectory.open(Paths.get("D://lucene2"));
+		dir=FSDirectory.open(Paths.get("D:\\lucene2"));
 		IndexWriter writer=getWriter();
 		for(int i=0;i<ids.length;i++) {
 			Document document=new Document();
