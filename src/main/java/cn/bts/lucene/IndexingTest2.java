@@ -76,7 +76,6 @@ public class IndexingTest2 {
 		}
 			writer.close();
 	}
-	
 	/**
 	 * 查询
 	 * @throws Exception
